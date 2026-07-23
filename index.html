@@ -1,150 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#080a0c">
-  <meta name="description" content="RCO & Asociados conecta personas, proyectos e inversiones mediante alianzas estratégicas y acompañamiento integral.">
-  <title>RCO & Asociados | Confianza, proyectos e inversiones</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles 5.css">
-  <script defer src="script.js"></script>
+<meta name="description" content="RCO Living, división operativa de RCO & Asociados para mantenimiento, administración y cuidado integral de propiedades.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a0d">
+  <title>RCO Living</title>
+  <link rel="stylesheet" href="sistema.css">
+<link rel="icon" href="logo-rco-living.png">
+<link rel="manifest" href="site.webmanifest">
 </head>
-<body>
-<header class="site-header">
-  <a class="brand" href="#inicio" aria-label="RCO & Asociados"><img src="logo-rco-header.png" alt="RCO & Asociados"></a>
-  <button class="menu-toggle" aria-expanded="false" aria-controls="nav">☰</button>
-  <nav id="nav">
-    <a href="#inicio" data-i18n="nav_home">Inicio</a>
-    <a href="#grupo" data-i18n="nav_group">Grupo RCO</a>
-    <a href="#mercados" data-i18n="nav_projects">Proyectos</a>
-    <a href="#servicios" data-i18n="nav_investments">Inversiones</a>
-    <a href="#living">RCO Living</a>
-    <a href="#contacto" data-i18n="nav_contact">Contacto</a>
-  </nav>
-  <div class="header-actions">
-    <select id="language" aria-label="Idioma">
-      <option value="es">ES</option><option value="pt">PT</option><option value="en">EN</option>
-    </select>
-    <a class="btn btn-outline desktop-cta" href="#contacto" data-i18n="schedule">Agendar reunión</a>
-  </div>
-</header>
-
-<main>
-<section class="hero section" id="inicio">
-  <div class="photo hero-photo"></div>
-  <div class="shade"></div>
-  <div class="content hero-content reveal">
-    <span class="eyebrow" data-i18n="impact">Impacto</span>
-    <h1><span data-i18n="build">Construimos</span><br><em data-i18n="trust">Confianza.</em></h1>
-    <p data-i18n="hero_text">Más de dos décadas construyendo relaciones basadas en transparencia, compromiso y resultados.</p>
-    <div class="actions">
-      <a class="btn" href="#grupo" data-i18n="history">Conocé nuestra historia</a>
-      <a class="btn btn-outline" href="#mercados" data-i18n="explore">Explorá oportunidades</a>
-    </div>
-  </div>
-</section>
-
-<section class="story section" id="grupo">
-  <div class="photo family-photo"></div><div class="shade"></div>
-  <div class="content reveal">
-    <span class="eyebrow" data-i18n="emotion">Emoción</span>
-    <h2><span data-i18n="places">Construimos lugares<br>donde nacen las</span><br><em data-i18n="stories">mejores historias.</em></h2>
-    <p data-i18n="story_text">Creamos espacios para disfrutar en familia, generar recuerdos y vivir experiencias incomparables.</p>
-    <a class="btn btn-outline" href="#mercados" data-i18n="view_projects">Ver proyectos</a>
-  </div>
-</section>
-
-<section class="markets" id="mercados">
-  <div class="section-copy reveal">
-    <span class="eyebrow" data-i18n="opportunities">Oportunidades</span>
-    <h2 data-i18n="destinations">Oportunidades en destinos excepcionales.</h2>
-    <p data-i18n="choose">Elegí dónde querés construir tu próxima historia.</p>
-  </div>
-  <div class="market-grid">
-    <article style="--bg:url('brasil.jpg')"><div><b>Brasil</b><small>Porto de Galinhas y Pernambuco</small></div></article>
-    <article style="--bg:url('patagonia.jpg')"><div><b>Patagonia</b><small>Bariloche, Villa La Angostura y alrededores</small></div></article>
-    <article style="--bg:url('buenos-aires.jpg')"><div><b>Buenos Aires</b><small>Costa Atlántica y más</small></div></article>
-    <article style="--bg:url('espana.jpg')"><div><b>España</b><small>Madrid y zonas estratégicas</small></div></article>
-    <article style="--bg:url('estados-unidos.jpg')"><div><b>Estados Unidos</b><small>Miami y oportunidades</small></div></article>
-  </div>
-</section>
-
-<section class="services section" id="servicios">
-  <div class="photo services-photo"></div><div class="shade"></div>
-  <div class="content reveal">
-    <span class="eyebrow" data-i18n="calm">Tranquilidad</span>
-    <h2><span data-i18n="we_handle">Nos ocupamos</span><br><em data-i18n="everything">de todo.</em></h2>
-    <p data-i18n="support_text">Acompañamiento integral en cada etapa.</p>
-    <div class="service-list">
-      <span>◎ <b data-i18n="advice">Asesoramiento personalizado</b></span>
-      <span>▤ <b data-i18n="docs">Documentación y legalidad</b></span>
-      <span>◈ <b data-i18n="finance">Financiamiento a medida</b></span>
-      <span>▣ <b data-i18n="management">Administración de propiedades</b></span>
-      <span>⌂ <b data-i18n="rentals">Alquileres y reservas</b></span>
-      <span>⚙ <b data-i18n="maintenance">Mantenimiento y soporte 24/7</b></span>
-    </div>
-  </div>
-</section>
-
-<section class="living section" id="living">
-  <div class="photo living-photo"></div><div class="shade"></div>
-  <div class="content reveal">
-    <span class="eyebrow">RCO Living</span>
-    <h2><span data-i18n="your_property">Tu propiedad.</span><br><span data-i18n="your_investment">Tu inversión.</span><br><em data-i18n="your_freedom">Tu libertad.</em></h2>
-    <p data-i18n="living_text">Gestioná todo desde nuestra plataforma, estés donde estés.</p>
-    <div class="feature-pills">
-      <span data-i18n="reservations">Reservas y calendario</span>
-      <span data-i18n="income">Ingresos en tiempo real</span>
-      <span data-i18n="guests">Huéspedes y check-in</span>
-      <span data-i18n="expenses">Gastos y mantenimiento</span>
-      <span data-i18n="communication">Comunicación 24/7</span>
-      <span data-i18n="experiences">Experiencias y servicios</span>
-    </div>
-  </div>
-</section>
-
-<section class="payments">
-  <div>
-    <span class="eyebrow" data-i18n="payments_title">Pagos preparados para crecer</span>
-    <h2 data-i18n="payments_heading">Una plataforma lista para integrar pagos locales e internacionales.</h2>
-    <p data-i18n="payments_note">La primera versión deja preparada la arquitectura. Los cobros se activarán después de contratar y verificar el proveedor de pagos correspondiente.</p>
-  </div>
-  <div class="payment-methods" aria-label="Métodos de pago previstos">
-    <span>PIX</span><span>Visa</span><span>Mastercard</span><span>Apple Pay</span><span>Google Pay</span><span>PayPal</span>
-  </div>
-</section>
-
-<section class="cta section" id="contacto">
-  <div class="photo office-photo"></div><div class="shade"></div>
-  <div class="content reveal">
-    <span class="eyebrow" data-i18n="lets_talk">Hablemos</span>
-    <h2><span data-i18n="best_opps">Las mejores oportunidades<br>comienzan con una</span> <em data-i18n="conversation">conversación.</em></h2>
-    <p data-i18n="cta_text">Agendemos una reunión y comencemos a construir la suya.</p>
-    <button class="btn" data-open-contact data-i18n="schedule">Agendar reunión</button>
-  </div>
-</section>
-</main>
-
-<footer>
-  <img src="logo-rco-header.png" alt="RCO & Asociados">
-  <p data-i18n="footer_text">Conectamos personas, proyectos e inversiones para desarrollar oportunidades y alianzas estratégicas en América y Europa.</p>
-  <div><b data-i18n="contacts">Contacto</b><a href="mailto:info@rcoasociados.com">info@rcoasociados.com</a><span>Porto de Galinhas, PE · Brasil</span></div>
-  <small>© 2026 RCO & Asociados. <span data-i18n="rights">Todos los derechos reservados.</span></small>
-</footer>
-
-<button class="floating-contact" data-open-contact aria-label="Abrir contacto">✆</button>
-<div class="modal" id="contact-modal" hidden>
-  <div class="modal-card">
-    <button class="close" aria-label="Cerrar">×</button>
-    <img src="logo-rco-header.png" alt="">
-    <h3 data-i18n="contact_advisor">Contactar un asesor</h3>
-    <a class="whatsapp" href="https://wa.me/55998991468?text=Hola%20RCO%20%26%20Asociados%2C%20quisiera%20recibir%20informaci%C3%B3n." target="_blank" rel="noopener">🇧🇷 WhatsApp Brasil<br><small>+55 99899-1468</small></a>
-    <a class="whatsapp" href="https://wa.me/5492262626567?text=Hola%20RCO%20%26%20Asociados%2C%20quisiera%20recibir%20informaci%C3%B3n." target="_blank" rel="noopener">🇦🇷 WhatsApp Argentina<br><small>+54 9 2262 62-6567</small></a>
-    <a class="email" href="mailto:info@rcoasociados.com">info@rcoasociados.com</a>
-  </div>
-</div>
+<body class="landing-body">
+  <main class="cover">
+    <section class="poster" aria-label="RCO Living">
+      <div class="lang-floating" aria-label="Selector de idioma">
+        <button data-lang="pt">PT</button>
+        <button data-lang="es">ES</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <a class="enter-hit" href="divisiones.html" data-i18n-aria="enterAria">
+        <span data-i18n="enter">INGRESAR</span>
+      </a>
+    </section>
+  </main>
+  <script src="i18n.js"></script>
+  <script>
+    RCO_I18N.init();
+    const link = document.querySelector('.enter-hit');
+    const params = new URLSearchParams(location.search);
+    if (params.get('propiedad')) link.href = `divisiones.html?propiedad=${encodeURIComponent(params.get('propiedad'))}`;
+  </script>
+<script src="app.js"></script>
 </body>
 </html>

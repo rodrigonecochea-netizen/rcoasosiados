@@ -1,26 +1,22 @@
-# RCO & Asociados — Web v1
+# RCO Living OS v1.1 — Operativa Mejorada
 
-Sitio institucional responsive preparado para publicar.
+Versión consolidada para subir a GitHub y desplegar en el VPS con Nginx.
 
-## Publicación rápida en Vercel
-1. Subir todos los archivos de esta carpeta al repositorio `rcoasociados`.
-2. En Vercel: Add New → Project → importar el repositorio.
-3. Framework Preset: `Other`.
-4. Build Command: dejar vacío.
-5. Output Directory: dejar vacío.
-6. Deploy.
+## Incluye
+- Portada oficial y selector PT/ES/EN.
+- Centro de divisiones y formularios para cliente registrado u ocasional.
+- Login privado de demostración.
+- Centro de Operaciones.
+- RCO Core CRM con clientes, propiedades y recursos.
+- Biblioteca multimedia piloto.
+- Mejoras móviles, accesibilidad, metadatos, página 404, robots.txt y manifiesto web.
 
-## Dominios
-En Vercel → Project → Settings → Domains:
-- `rcoasociados.com`
-- `www.rcoasociados.com`
-
-Vercel mostrará los registros DNS exactos. Copiarlos en Cloudflare.
-
-Para `rcoliving.com`, por ahora conviene redirigirlo a `rcoasociados.com/#living` hasta desarrollar la plataforma independiente.
+## Acceso de demostración
+- Usuario: `administrador`
+- Contraseña: `RCO2026`
 
 ## Importante
-- Los botones de WhatsApp están activos con Brasil y Argentina.
-- El selector ES/PT/EN funciona en el navegador.
-- La sección de pagos comunica capacidad futura; no procesa dinero todavía.
-- Para cobrar en la app habrá que contratar un proveedor (por ejemplo, Mercado Pago/Stripe u otro según país), completar verificaciones legales y programar la integración.
+Esta versión es operativa como sitio estático, pero los datos se guardan en `localStorage` del navegador. Todavía no hay base de datos central ni autenticación segura de servidor. No cargar documentación sensible ni datos privados definitivos hasta conectar el backend.
+
+## Despliegue estático con Nginx
+Copiar todos los archivos al directorio web configurado y usar `index.html` como entrada. No requiere Node.js ni PM2 para servir esta versión estática.
