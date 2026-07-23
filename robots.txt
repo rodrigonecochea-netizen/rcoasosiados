@@ -1,6 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /control.html
-Disallow: /core.html
-Disallow: /media.html
-Disallow: /login.html
+Sitemap: https://rcoasociados.com/sitemap.xml
